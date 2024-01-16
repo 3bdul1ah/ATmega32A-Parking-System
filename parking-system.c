@@ -70,7 +70,7 @@ void displayFull() {
     Timer1_Delay(DELAY_5_MS);
 
     PORTA = ~(1 << SEGMENT_2); // Activate 2nd segment
-        PORTB = segmentFullValues[1]; // Display 'U'
+    PORTB = segmentFullValues[1]; // Display 'U'
     Timer1_Delay(DELAY_5_MS);
 
     PORTA = ~(1 << SEGMENT_3); // Activate 3rd segment
