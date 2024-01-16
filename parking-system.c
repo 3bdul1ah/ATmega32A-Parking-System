@@ -109,7 +109,7 @@ void Timer1_Delay(uint16_t delay_ms) {
 }
 
 ISR(INT0_vect) { // Interrupt Service Routine for INT0
-    PORTA = 0xFF; // Reset display
+    PORTA = 0xFF; // Disable display
     if (availableSpaces > 0) {
         availableSpaces--; // Decrement available spaces
         PORTC|= (1 << GREEN_LED); // Turn on green LED
@@ -121,7 +121,7 @@ ISR(INT0_vect) { // Interrupt Service Routine for INT0
 }
 
 ISR(INT1_vect) { // Interrupt Service Routine for INT1
-    PORTA = 0xFF; // Reset display
+    PORTA = 0xFF; // Disable display
     if (availableSpaces < TOTAL_PARKING_SPACES) {
         availableSpaces++; // Increment available spaces
         PORTC |= (1 << RED_LED); // Turn on red LED
