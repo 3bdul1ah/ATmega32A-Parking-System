@@ -2,7 +2,7 @@
 #include <avr/interrupt.h> // Include AVR interrupt handling header
 
 #define F_CPU 1000000UL // Define CPU frequency as 1 MHz for delay calculations
-#define TOTAL_PARKING_SPACES 10 // Define the total number of parking spaces
+#define TOTAL_PARKING_SPACES 200 // Define the total number of parking spaces
 
 // Define pin mappings for various components
 #define ENTRY_IR PD2 // Infrared sensor for entry on pin PD2
